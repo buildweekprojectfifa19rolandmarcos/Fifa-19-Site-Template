@@ -139,9 +139,15 @@ body .rootNav nav a:hover {
   background-color: black;
   color: white;
 }
+body .products {
+  display: inline-flex;
+  width: 100%;
+}
 body .products .productContainer {
+  width: 30%;
   display: flex;
   padding: 2%;
+  margin: 1% 1%;
   border: 2px solid black;
 }
 body .products .productContainer .pImg {
@@ -149,6 +155,7 @@ body .products .productContainer .pImg {
   width: 5rem;
 }
 body .game {
+  margin: 1% 25%;
   display: flex;
   background: #00000000 url("/Design Folder/Field.jpg") no-repeat center;
   width: 50%;
