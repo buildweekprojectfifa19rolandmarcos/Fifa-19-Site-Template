@@ -125,6 +125,10 @@ table {
 body {
   font-size: 62.5%;
 }
+body .fab {
+  height: 10rem;
+  width: 10rem;
+}
 body .rootNav nav {
   margin: 0 33%;
   list-style: none;
@@ -140,6 +144,10 @@ body .rootNav nav a {
 body .rootNav nav a:hover {
   background-color: black;
   color: white;
+  transition-duration: 1.5s;
+  background: linear-gradient(to left, black 50%, white 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
 }
 body .Cta {
   margin: 2% 22%;
@@ -186,6 +194,32 @@ body .products .productContainer li {
 body .products .productContainer button {
   width: 66%;
 }
+body .products .productContainerInv {
+  width: 30%;
+  padding: 2%;
+  margin: 1% 1%;
+  border: 2px solid black;
+  align-content: center;
+  text-align: center;
+  line-height: 155%;
+  background-color: black;
+  color: white;
+}
+body .products .productContainerInv h1 {
+  font-size: 1.45rem;
+  font-weight: bold;
+}
+body .products .productContainerInv .pImg {
+  height: 5rem;
+  width: 5rem;
+}
+body .products .productContainerInv li {
+  font-size: 0.8rem;
+  font-weight: bolder;
+}
+body .products .productContainerInv button {
+  width: 66%;
+}
 body .game {
   margin: 1% 25%;
   display: flex;
@@ -223,6 +257,11 @@ body .game .vs {
   display: flex;
   width: 33.3%;
   justify-content: center;
+}
+body footer {
+  display: inline-flex;
+  width: 100%;
+  padding: 0 33%;
 }
 body footer a {
   display: inline-flex;
