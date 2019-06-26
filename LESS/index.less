@@ -42,6 +42,25 @@ table {
 	border-spacing: 0;
 }
 
+body {
+    font-size: 62.5%;
+.rootNav {
+    nav {
+        list-style: none;
+        display: flex;
+        flex-wrap: nowrap;
+        li {
+        font-size: 1rem;
+        padding: 0 4%;
+            &:hover {
+            background-color: black;
+            color: white;
+            }
+        }
+    }
+}
+
+
 .game {
     display: flex;
     background: #00000000 url("/Design Folder/Field.jpg") no-repeat center;
@@ -85,4 +104,5 @@ table {
         width: 33.3%;
         justify-content: center;
     }
+}
 }
