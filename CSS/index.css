@@ -130,13 +130,23 @@ body .rootNav nav {
   display: flex;
   flex-wrap: nowrap;
 }
-body .rootNav nav li {
+body .rootNav nav a {
+  text-decoration: none;
   font-size: 1rem;
   padding: 0 4%;
 }
-body .rootNav nav li:hover {
+body .rootNav nav a:hover {
   background-color: black;
   color: white;
+}
+body .products .productContainer {
+  display: flex;
+  padding: 2%;
+  border: 2px solid black;
+}
+body .products .productContainer .pImg {
+  height: 5rem;
+  width: 5rem;
 }
 body .game {
   display: flex;
