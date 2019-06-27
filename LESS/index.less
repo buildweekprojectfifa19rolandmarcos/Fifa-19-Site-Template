@@ -43,6 +43,11 @@ table {
 }
 
 body {
+    background-color: black;
+    background-image: url("/Design Folder/backgroundField.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     .fab{
         height: 10rem;
         width: 10rem;
@@ -51,29 +56,36 @@ body {
     font-size: 62.5%;
 
     .rootNav {
-    nav {
+        nav {
+            padding: 2% 0;
             margin: 0 33%;
             list-style: none;
             display: flex;
             flex-wrap: nowrap;
-            a {
-                color: black;
+            a {     
+                border-right: 1px solid white;
+                color: white;
                 text-decoration: none;
                 font-size: 1rem;
                 padding: 0 4%;
     
                 &:hover {
-                    background-color: black;
-                    color: white;
+                    background-color: white;
+                    color: black;
                     transition-duration: 1.5s;
-                    background: linear-gradient(to left, black 50%, white 50%);
+                    background: linear-gradient(to left, white 50%, black 50%);
                     background-size: 200% 100%;
                     background-position:right bottom;
                 }
             }
         }
     }
-
+    @media (min-width: 801px) {
+        // background-size: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
     @media (max-width: 800px) {
         .rootNav {
             nav {
@@ -89,7 +101,7 @@ body {
 
     .Cta{
         
-        background-color: black;
+        background-color: rgba(0, 0, 0, 0.411);
         color: white;
         margin: 2% 22%;
         display: inline-flex;
@@ -128,6 +140,8 @@ body {
             align-content: center;
             text-align: center;
             line-height: 155%;
+            background-color: white;
+            opacity: 0.60;
             h1 {
                 font-size: 1.45rem;
                 font-weight: bold; 
@@ -192,7 +206,7 @@ body {
     .game {
         margin: 1% 25%;
         display: flex;
-        background: #00000000 url("/Design Folder/Field.jpg") no-repeat center;
+        background-color: rgba(0, 0, 0, 0.500);
         width: 50%;
         color: rgb(255, 255, 255);
         text-shadow: 1px 1px 5px rgb(0, 0, 0);
@@ -229,23 +243,33 @@ body {
         }
     }
 
+    .socialMedia {
+        display: flex;
+        width: 100%;
+        span {
+            margin-left: 33%;
+            justify-content: center;
+        }
+    }
+
     footer{
+        background-color: rgba(0, 0, 0, 0.438);
+        padding: 2% 0;
         display: inline-flex;
         width: 100%;
-        padding: 0 33%;
         a{
+            font-size: 1.0rem;
             display: inline-flex;
             text-decoration: none;
             padding: 0 1%;
-            margin: 0 1%;
-            border-right: 1px solid black;
-            height: 15%;
-            color: black;
+            margin: 0 auto;
+            border-right: 1px solid white;
+            color: white;
             &:hover{
-                background-color: black;
-                color: white;
+                background-color: rgba(0, 0, 0, 0);
+                color: black;
                 transition-duration: 1.5s;
-                background: linear-gradient(to left, black 50%, white 50%);
+                background: linear-gradient(to left, white 50%, rgba(0, 0, 0, 0) 50%);
                 background-size: 200% 100%;
                 background-position:right bottom;
             }
