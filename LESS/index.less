@@ -43,7 +43,13 @@ table {
 }
 
 body {
+    .fab{
+        height: 10rem;
+        width: 10rem;
+    }
+    
     font-size: 62.5%;
+
     .rootNav {
     nav {
             margin: 0 33%;
@@ -55,16 +61,36 @@ body {
                 text-decoration: none;
                 font-size: 1rem;
                 padding: 0 4%;
+    
                 &:hover {
                     background-color: black;
                     color: white;
+                    transition-duration: 1.5s;
+                    background: linear-gradient(to left, black 50%, white 50%);
+                    background-size: 200% 100%;
+                    background-position:right bottom;
                 }
             }
         }
     }
 
+    @media (max-width: 800px) {
+        .rootNav {
+            nav {
+                    flex-direction: column;
+                    flex-wrap: nowrap;
+                    a {
+                        margin: 2%;
+                    }  
+                }
+            }    
+    }
+
+
     .Cta{
         
+        background-color: black;
+        color: white;
         margin: 2% 22%;
         display: inline-flex;
         flex-direction: column;
@@ -75,12 +101,18 @@ body {
             font-size: 5rem;
             font-weight: bolder;
             // align-content: center;
-            border: 2px solid red;
+            // border: 2px solid red;
+        }
+
+        @media(max-width: 500px){
+            h1{
+                font-size: 2rem;
+            }
         }
 
         .landingImg{
             width: 100%;
-            border: 2px solid green;
+            // border: 2px solid green;
             // align-content: center;
         }
     }
@@ -110,7 +142,50 @@ body {
             }
             button {
                 width:66%;
+                text-decoration: none;
+                background-color: black;
+                color:white;
+                border: none;
+                border-radius: 10px;
             }
+        }
+
+        .productContainerInv{
+            width: 30%;
+            padding: 2%;
+            margin: 1% 1%;
+            border: 2px solid black;
+            align-content: center;
+            text-align: center;
+            line-height: 155%;
+            background-color: black;
+            color: white;
+            h1 {
+                font-size: 1.45rem;
+                font-weight: bold; 
+            }
+            .pImg {
+                height: 5rem;
+                width: 5rem;
+            }
+            li {
+                font-size: .8rem;
+                font-weight: bolder;
+            }
+            button {
+                width:66%;
+                text-decoration: none;
+                background-color: whitesmoke;
+                border: none;
+                border-radius: 10px;
+            }
+        }
+    }
+
+    @media(max-width: 800px){
+        .products{
+            flex-direction: column;
+            margin: 0 33%;
         }
     }
 
@@ -155,6 +230,9 @@ body {
     }
 
     footer{
+        display: inline-flex;
+        width: 100%;
+        padding: 0 33%;
         a{
             display: inline-flex;
             text-decoration: none;

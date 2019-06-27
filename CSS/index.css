@@ -125,6 +125,10 @@ table {
 body {
   font-size: 62.5%;
 }
+body .fab {
+  height: 10rem;
+  width: 10rem;
+}
 body .rootNav nav {
   margin: 0 33%;
   list-style: none;
@@ -140,8 +144,23 @@ body .rootNav nav a {
 body .rootNav nav a:hover {
   background-color: black;
   color: white;
+  transition-duration: 1.5s;
+  background: linear-gradient(to left, black 50%, white 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+}
+@media (max-width: 800px) {
+  body .rootNav nav {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  body .rootNav nav a {
+    margin: 2%;
+  }
 }
 body .Cta {
+  background-color: black;
+  color: white;
   margin: 2% 22%;
   display: inline-flex;
   flex-direction: column;
@@ -152,11 +171,14 @@ body .Cta h1 {
   margin: 2%;
   font-size: 5rem;
   font-weight: bolder;
-  border: 2px solid red;
+}
+@media (max-width: 500px) {
+  body .Cta h1 {
+    font-size: 2rem;
+  }
 }
 body .Cta .landingImg {
   width: 100%;
-  border: 2px solid green;
 }
 body .products {
   display: inline-flex;
@@ -185,6 +207,47 @@ body .products .productContainer li {
 }
 body .products .productContainer button {
   width: 66%;
+  text-decoration: none;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+body .products .productContainerInv {
+  width: 30%;
+  padding: 2%;
+  margin: 1% 1%;
+  border: 2px solid black;
+  align-content: center;
+  text-align: center;
+  line-height: 155%;
+  background-color: black;
+  color: white;
+}
+body .products .productContainerInv h1 {
+  font-size: 1.45rem;
+  font-weight: bold;
+}
+body .products .productContainerInv .pImg {
+  height: 5rem;
+  width: 5rem;
+}
+body .products .productContainerInv li {
+  font-size: 0.8rem;
+  font-weight: bolder;
+}
+body .products .productContainerInv button {
+  width: 66%;
+  text-decoration: none;
+  background-color: whitesmoke;
+  border: none;
+  border-radius: 10px;
+}
+@media (max-width: 800px) {
+  body .products {
+    flex-direction: column;
+    margin: 0 33%;
+  }
 }
 body .game {
   margin: 1% 25%;
@@ -223,6 +286,11 @@ body .game .vs {
   display: flex;
   width: 33.3%;
   justify-content: center;
+}
+body footer {
+  display: inline-flex;
+  width: 100%;
+  padding: 0 33%;
 }
 body footer a {
   display: inline-flex;
