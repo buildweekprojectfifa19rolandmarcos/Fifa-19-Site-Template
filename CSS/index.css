@@ -159,6 +159,8 @@ body .rootNav nav a:hover {
   }
 }
 body .Cta {
+  background-color: black;
+  color: white;
   margin: 2% 22%;
   display: inline-flex;
   flex-direction: column;
@@ -169,11 +171,14 @@ body .Cta h1 {
   margin: 2%;
   font-size: 5rem;
   font-weight: bolder;
-  border: 2px solid red;
+}
+@media (max-width: 500px) {
+  body .Cta h1 {
+    font-size: 2rem;
+  }
 }
 body .Cta .landingImg {
   width: 100%;
-  border: 2px solid green;
 }
 body .products {
   display: inline-flex;
@@ -202,6 +207,11 @@ body .products .productContainer li {
 }
 body .products .productContainer button {
   width: 66%;
+  text-decoration: none;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 10px;
 }
 body .products .productContainerInv {
   width: 30%;
@@ -228,6 +238,16 @@ body .products .productContainerInv li {
 }
 body .products .productContainerInv button {
   width: 66%;
+  text-decoration: none;
+  background-color: whitesmoke;
+  border: none;
+  border-radius: 10px;
+}
+@media (max-width: 800px) {
+  body .products {
+    flex-direction: column;
+    margin: 0 33%;
+  }
 }
 body .game {
   margin: 1% 25%;

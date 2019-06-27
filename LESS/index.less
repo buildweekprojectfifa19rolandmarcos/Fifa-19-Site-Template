@@ -85,8 +85,12 @@ body {
                 }
             }    
     }
+
+
     .Cta{
         
+        background-color: black;
+        color: white;
         margin: 2% 22%;
         display: inline-flex;
         flex-direction: column;
@@ -97,12 +101,18 @@ body {
             font-size: 5rem;
             font-weight: bolder;
             // align-content: center;
-            border: 2px solid red;
+            // border: 2px solid red;
+        }
+
+        @media(max-width: 500px){
+            h1{
+                font-size: 2rem;
+            }
         }
 
         .landingImg{
             width: 100%;
-            border: 2px solid green;
+            // border: 2px solid green;
             // align-content: center;
         }
     }
@@ -132,6 +142,11 @@ body {
             }
             button {
                 width:66%;
+                text-decoration: none;
+                background-color: black;
+                color:white;
+                border: none;
+                border-radius: 10px;
             }
         }
 
@@ -159,7 +174,18 @@ body {
             }
             button {
                 width:66%;
+                text-decoration: none;
+                background-color: whitesmoke;
+                border: none;
+                border-radius: 10px;
             }
+        }
+    }
+
+    @media(max-width: 800px){
+        .products{
+            flex-direction: column;
+            margin: 0 33%;
         }
     }
 
