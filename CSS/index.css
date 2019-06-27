@@ -149,6 +149,15 @@ body .rootNav nav a:hover {
   background-size: 200% 100%;
   background-position: right bottom;
 }
+@media (max-width: 800px) {
+  body .rootNav nav {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  body .rootNav nav a {
+    margin: 2%;
+  }
+}
 body .Cta {
   margin: 2% 22%;
   display: inline-flex;
