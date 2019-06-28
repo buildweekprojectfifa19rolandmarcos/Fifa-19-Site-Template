@@ -167,6 +167,9 @@ body .fab {
   height: 10rem;
   width: 10rem;
 }
+body button {
+  cursor: pointer;
+}
 body .rootNav nav {
   padding: 2% 0;
   margin: 0 33%;
@@ -351,6 +354,9 @@ body .socialMedia {
 body .socialMedia span {
   margin-left: 33%;
   justify-content: center;
+}
+body .socialMedia span i {
+  cursor: pointer;
 }
 body footer {
   z-index: -1;
