@@ -124,10 +124,8 @@ table {
 }
 body {
   background-color: black;
-  background-image: url("/Design Folder/backgroundField.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background: url("/Design Folder/backgroundField.png") no-repeat center center fixed;
+  min-height: 100%;
   font-size: 62.5%;
 }
 body .fab {
@@ -185,6 +183,9 @@ body .Cta h1 {
   margin: 2%;
   font-size: 5rem;
   font-weight: bolder;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 @media (max-width: 500px) {
   body .Cta h1 {
@@ -317,7 +318,9 @@ body .socialMedia span {
   justify-content: center;
 }
 body footer {
-  background-color: rgba(0, 0, 0, 0.438);
+  bottom: 0;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
   padding: 2% 0;
   display: inline-flex;
   width: 100%;

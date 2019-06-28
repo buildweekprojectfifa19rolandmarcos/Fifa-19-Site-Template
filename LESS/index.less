@@ -44,10 +44,8 @@ table {
 
 body {
     background-color: black;
-    background-image: url("/Design Folder/backgroundField.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background: url("/Design Folder/backgroundField.png") no-repeat center center fixed; 
+    min-height: 100%;
     .fab{
         height: 10rem;
         width: 10rem;
@@ -111,7 +109,9 @@ body {
         h1{
             margin: 2%;
             font-size: 5rem;
-            font-weight: bolder;
+            font-weight: bolder;    background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
             // align-content: center;
             // border: 2px solid red;
         }
@@ -257,8 +257,10 @@ body {
         }
     }
 
-    footer{
-        background-color: rgba(0, 0, 0, 0.438);
+    footer {
+        bottom:0;
+        position:absolute;
+        background-color: rgba(0, 0, 0, 0.500);
         padding: 2% 0;
         display: inline-flex;
         width: 100%;
