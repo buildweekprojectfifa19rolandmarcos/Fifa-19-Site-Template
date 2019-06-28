@@ -8,19 +8,41 @@
     <LINK href="/CSS/index.css" rel="stylesheet" type="text/css">
     <title>Fifa 19 aka Comparison Site</title>
     <script src="./Javascript/index.js" async></script>
+    <script src="./Javascript/menu/menu.js" async></script>
     <script src="https://kit.fontawesome.com/8ab6b77490.js"></script>
 </head>
 
 <body>
     <!-- Nav -->
-    <div class="rootNav">
+
+    <!--comment this out to have the old nav-->
+    <div class="header"> 
+        <img class="menu-button" src="./Design Folder/menu.png"/>
+    </div>
+    <!---->
+    <div class="menu">
+        <ul>
+            <a href='Index.html'>Home</a>
+            <a href='#'>Features</a>
+            <a href='shop.html'>Shop</a>
+            <a href='#'>Contact</a>
+            <a href='#'>About</a>
+            <a href='#'>Terms</a>
+            <a href='#'>Privacy</a>
+            <a href='#'>Careers</a>
+        </ul>
+    </div>
+
+    <!--Obsolete with sticky menu bar-->
+    <!-- <div class="rootNav">
         <nav>
             <a href='Index.html'>Home</a>
             <a href=''>Features</a>
             <a href='shop.html'>Shop</a>
             <a href=''>Contact</a>
         </nav>
-    </div>
+    </div> -->
+    
     <!-- Call To Action -->
     <div class="Cta">
         <h1>Fifa 19 Player Site</h1>
@@ -80,7 +102,7 @@
     <div class="socialMedia">
         <!-- <img src="#" alt="facebook" class="mediaImg"> -->
         <span style="font-size: 3rem; color: #ffffff;">
-            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-facebook-square" href="#"></i>
             <i class="fab fa-instagram"></i>
             <i class="fab fa-twitch"></i>
         </span>
