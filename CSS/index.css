@@ -1,3 +1,49 @@
+.menu-button {
+  position: absolute;
+  left: 20px;
+  cursor: pointer;
+}
+.menu {
+  display: none;
+  position: fixed;
+  top: 50px;
+  left: 0px;
+  width: 350px;
+  height: 100vh;
+  /* This give the height 100% of the screen or, '100% of View Height' */
+  background-color: rgba(0, 0, 0, 0.75);
+  border: 1px solid white;
+  border-left: none;
+  border-bottom: none;
+  overflow-x: hidden;
+  overflow-y: auto;
+  z-index: 2;
+  /* This set the layer level of the element, it has precendence over initial level of 1*/
+}
+.menu ul {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 30%;
+}
+.menu ul a {
+  color: white;
+  list-style-type: none;
+  font-size: 16px;
+  padding: 30px 0;
+  text-align: center;
+  text-decoration: none;
+}
+.menu ul a:hover {
+  background-color: white;
+  color: black;
+  transition-duration: 1.5s;
+  background: linear-gradient(to left, white 50%, black 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+}
+.menu--open {
+  display: block;
+}
 html,
 body,
 div,
@@ -123,14 +169,25 @@ table {
   border-spacing: 0;
 }
 body {
-  background-color: black;
   background: url("/Design Folder/backgroundField.png") no-repeat center center fixed;
+  background-color: black;
   min-height: 100%;
   font-size: 62.5%;
 }
 body .fab {
   height: 10rem;
   width: 10rem;
+}
+body button {
+  cursor: pointer;
+}
+body .header {
+  width: 100%;
+  height: 50px;
+  top: 0;
+  z-index: 2;
+  background-color: #000000;
+  position: fixed;
 }
 body .rootNav nav {
   padding: 2% 0;
@@ -317,8 +374,11 @@ body .socialMedia span {
   margin-left: 33%;
   justify-content: center;
 }
+body .socialMedia span i {
+  cursor: pointer;
+}
 body footer {
-  bottom: 0;
+  z-index: -1;
   position: absolute;
   background-color: rgba(0, 0, 0, 0.5);
   padding: 2% 0;
