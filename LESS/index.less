@@ -44,6 +44,17 @@ table {
 	border-spacing: 0;
 }
 
+html {
+    ::-webkit-scrollbar{
+        width: 10px;
+    }
+    ::-webkit-scrollbar-track{
+        background: black;
+    }
+    ::-webkit-scrollbar-thumb{
+        background: white;
+    }
+}
 body {
     background: url("/Design Folder/backgroundField.png") no-repeat center center fixed; 
     background-color: black;
@@ -53,6 +64,15 @@ body {
         width: 10rem;
     }
     
+    ::-webkit-scrollbar{
+        width: 10px;
+    }
+    ::-webkit-scrollbar-track{
+        background: black;
+    }
+    ::-webkit-scrollbar-thumb{
+        background: white;
+    }
     button{
         cursor: pointer;
     }
@@ -115,17 +135,15 @@ body {
         
         background-color: rgba(0, 0, 0, 0.411);
         color: white;
-        margin: 2% 22%;
+        margin: 2% 33%;
         display: inline-flex;
         flex-direction: column;
         align-content: center;
         padding: 2%;
         h1{
-            margin: 2%;
+            margin-left: 2%;
             font-size: 5rem;
-            font-weight: bolder;    background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
+            font-weight: bolder;    
             // align-content: center;
             // border: 2px solid red;
         }
