@@ -123,6 +123,11 @@ table {
   border-spacing: 0;
 }
 body {
+  background-color: black;
+  background-image: url("/Design Folder/backgroundField.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   font-size: 62.5%;
 }
 body .fab {
@@ -130,24 +135,33 @@ body .fab {
   width: 10rem;
 }
 body .rootNav nav {
+  padding: 2% 0;
   margin: 0 33%;
   list-style: none;
   display: flex;
   flex-wrap: nowrap;
 }
 body .rootNav nav a {
-  color: black;
+  border-right: 1px solid white;
+  color: white;
   text-decoration: none;
   font-size: 1rem;
   padding: 0 4%;
 }
 body .rootNav nav a:hover {
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: black;
   transition-duration: 1.5s;
-  background: linear-gradient(to left, black 50%, white 50%);
+  background: linear-gradient(to left, white 50%, black 50%);
   background-size: 200% 100%;
   background-position: right bottom;
+}
+@media (min-width: 801px) {
+  body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
 }
 @media (max-width: 800px) {
   body .rootNav nav {
@@ -159,7 +173,7 @@ body .rootNav nav a:hover {
   }
 }
 body .Cta {
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.411);
   color: white;
   margin: 2% 22%;
   display: inline-flex;
@@ -192,6 +206,8 @@ body .products .productContainer {
   align-content: center;
   text-align: center;
   line-height: 155%;
+  background-color: white;
+  opacity: 0.6;
 }
 body .products .productContainer h1 {
   font-size: 1.45rem;
@@ -252,7 +268,7 @@ body .products .productContainerInv button {
 body .game {
   margin: 1% 25%;
   display: flex;
-  background: #00000000 url("/Design Folder/Field.jpg") no-repeat center;
+  background-color: rgba(0, 0, 0, 0.5);
   width: 50%;
   color: #ffffff;
   text-shadow: 1px 1px 5px #000000;
@@ -287,25 +303,34 @@ body .game .vs {
   width: 33.3%;
   justify-content: center;
 }
+body .socialMedia {
+  display: flex;
+  width: 100%;
+}
+body .socialMedia span {
+  margin-left: 33%;
+  justify-content: center;
+}
 body footer {
+  background-color: rgba(0, 0, 0, 0.438);
+  padding: 2% 0;
   display: inline-flex;
   width: 100%;
-  padding: 0 33%;
 }
 body footer a {
+  font-size: 1rem;
   display: inline-flex;
   text-decoration: none;
   padding: 0 1%;
-  margin: 0 1%;
-  border-right: 1px solid black;
-  height: 15%;
-  color: black;
+  margin: 0 auto;
+  border-right: 1px solid white;
+  color: white;
 }
 body footer a:hover {
-  background-color: black;
-  color: white;
+  background-color: rgba(0, 0, 0, 0);
+  color: black;
   transition-duration: 1.5s;
-  background: linear-gradient(to left, black 50%, white 50%);
+  background: linear-gradient(to left, white 50%, rgba(0, 0, 0, 0) 50%);
   background-size: 200% 100%;
   background-position: right bottom;
 }
