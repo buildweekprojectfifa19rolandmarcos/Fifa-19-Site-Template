@@ -168,6 +168,15 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+html ::-webkit-scrollbar {
+  width: 10px;
+}
+html ::-webkit-scrollbar-track {
+  background: black;
+}
+html ::-webkit-scrollbar-thumb {
+  background: white;
+}
 body {
   background: url("/Design Folder/backgroundField.png") no-repeat center center fixed;
   background-color: black;
@@ -177,6 +186,15 @@ body {
 body .fab {
   height: 10rem;
   width: 10rem;
+}
+body ::-webkit-scrollbar {
+  width: 10px;
+}
+body ::-webkit-scrollbar-track {
+  background: black;
+}
+body ::-webkit-scrollbar-thumb {
+  background: white;
 }
 body button {
   cursor: pointer;
