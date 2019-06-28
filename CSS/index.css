@@ -262,7 +262,12 @@ body .products .productContainerInv button {
 @media (max-width: 800px) {
   body .products {
     flex-direction: column;
-    margin: 0 33%;
+  }
+  body .products .productContainer {
+    margin-left: 33%;
+  }
+  body .products .productContainerInv {
+    margin-left: 33%;
   }
 }
 body .game {
