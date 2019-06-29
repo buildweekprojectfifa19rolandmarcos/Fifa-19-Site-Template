@@ -187,15 +187,6 @@ body .fab {
   height: 10rem;
   width: 10rem;
 }
-body ::-webkit-scrollbar {
-  width: 10px;
-}
-body ::-webkit-scrollbar-track {
-  background: black;
-}
-body ::-webkit-scrollbar-thumb {
-  background: white;
-}
 body button {
   cursor: pointer;
 }
@@ -279,8 +270,7 @@ body .products .productContainer {
   align-content: center;
   text-align: center;
   line-height: 155%;
-  background-color: white;
-  opacity: 0.6;
+  background-color: hsla(0, 0%, 100%, 0.9);
 }
 body .products .productContainer h1 {
   font-size: 1.45rem;
@@ -289,6 +279,7 @@ body .products .productContainer h1 {
 body .products .productContainer .pImg {
   height: 5rem;
   width: 5rem;
+  border: 1px solid black;
 }
 body .products .productContainer li {
   font-size: 0.8rem;
@@ -299,14 +290,14 @@ body .products .productContainer button {
   text-decoration: none;
   background-color: black;
   color: white;
-  border: none;
+  border: 1px solid white;
   border-radius: 10px;
 }
 body .products .productContainerInv {
   width: 30%;
   padding: 2%;
   margin: 1% 1%;
-  border: 2px solid black;
+  border: 2px solid white;
   align-content: center;
   text-align: center;
   line-height: 155%;
@@ -320,6 +311,7 @@ body .products .productContainerInv h1 {
 body .products .productContainerInv .pImg {
   height: 5rem;
   width: 5rem;
+  border: 1px solid white;
 }
 body .products .productContainerInv li {
   font-size: 0.8rem;
@@ -329,7 +321,7 @@ body .products .productContainerInv button {
   width: 66%;
   text-decoration: none;
   background-color: whitesmoke;
-  border: none;
+  border: 1px solid black;
   border-radius: 10px;
 }
 @media (max-width: 800px) {
