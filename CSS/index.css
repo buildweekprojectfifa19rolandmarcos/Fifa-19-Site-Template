@@ -176,6 +176,7 @@ html ::-webkit-scrollbar-track {
 }
 html ::-webkit-scrollbar-thumb {
   background: white;
+  border-radius: 20px;
 }
 body {
   background: url("/Design Folder/backgroundField.png") no-repeat center center fixed;
@@ -197,6 +198,25 @@ body .header {
   z-index: 2;
   background-color: #000000;
   position: fixed;
+}
+body .header h1 {
+  display: inline-flex;
+  color: white;
+  font-size: 2.5rem;
+  padding: 1%;
+  margin-left: 33%;
+}
+@media (max-width: 800px) {
+  body .header h1 {
+    font-size: 2rem;
+    padding: 1%;
+  }
+}
+@media (max-width: 500px) {
+  body .header h1 {
+    font-size: 1.5rem;
+    padding: 1%;
+  }
 }
 body .rootNav nav {
   padding: 2% 0;
@@ -386,12 +406,10 @@ body .socialMedia span i {
 }
 body footer {
   z-index: -1;
-  position: absolute;
   background-color: rgba(0, 0, 0, 0.5);
   padding: 2% 0;
   display: inline-flex;
   width: 100%;
-  bottom: 0;
 }
 body footer a {
   font-size: 1rem;
