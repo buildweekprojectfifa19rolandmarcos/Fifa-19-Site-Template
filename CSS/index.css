@@ -223,6 +223,7 @@ body .rootNav nav {
   list-style: none;
   display: flex;
   flex-wrap: nowrap;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 body .rootNav nav a {
   border-right: 1px solid white;
@@ -245,6 +246,9 @@ body .rootNav nav a:hover {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+  }
+  body .header {
+    display: none;
   }
 }
 @media (max-width: 800px) {
