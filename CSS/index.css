@@ -179,7 +179,7 @@ html ::-webkit-scrollbar-thumb {
   border-radius: 20px;
 }
 body {
-  background: url("/Design Folder/backgroundField.png") no-repeat center center fixed;
+  background: url("./Design Folder/backgroundField.png") no-repeat center center fixed;
   background-color: black;
   min-height: 100%;
   font-size: 62.5%;
