@@ -39,6 +39,7 @@ q:before, q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -53,6 +54,7 @@ html {
     }
     ::-webkit-scrollbar-thumb{
         background: white;
+        border-radius: 20px;
     }
 }
 body {
@@ -62,16 +64,6 @@ body {
     .fab{
         height: 10rem;
         width: 10rem;
-    }
-    
-    ::-webkit-scrollbar{
-        width: 10px;
-    }
-    ::-webkit-scrollbar-track{
-        background: black;
-    }
-    ::-webkit-scrollbar-thumb{
-        background: white;
     }
     button{
         cursor: pointer;
@@ -85,6 +77,25 @@ body {
         z-index: 2;
         background-color: rgb(0, 0, 0, 0.3);
         position: fixed;
+        h1{
+            display: inline-flex;
+            color: white;
+            font-size: 2.5rem;
+            padding: 1%;
+            margin-left: 33%;
+            @media(max-width: 800px){
+                font-size: 2rem;
+                padding: 1%;
+                }
+            @media(max-width: 500px){
+                font-size: 1.5rem;
+                padding: 1%;
+                
+            }
+        
+        }
+        
+
     }
 
     .rootNav {
@@ -135,24 +146,26 @@ body {
         
         background-color: rgba(0, 0, 0, 0.411);
         color: white;
-        margin: 2% 33%;
+        margin: 2% 33%; @media(max-width: 800px){ margin-top: 10%;}
         display: inline-flex;
         flex-direction: column;
         align-content: center;
         padding: 2%;
         h1{
             margin-left: 2%;
-            font-size: 5rem;
+            font-size: 3.5rem;
             font-weight: bolder;    
             // align-content: center;
             // border: 2px solid red;
-        }
-
-        @media(max-width: 500px){
-            h1{
-                font-size: 2rem;
+            @media (max-width: 800px){
+                font-size: 2.5rem;
+            }
+            @media (max-width: 500px){
+                font-size: 1rem;
             }
         }
+
+        
 
         .landingImg{
             width: 100%;
@@ -172,8 +185,7 @@ body {
             align-content: center;
             text-align: center;
             line-height: 155%;
-            background-color: white;
-            opacity: 0.60;
+            background-color: hsla(0, 0%, 100%, 0.9);
             h1 {
                 font-size: 1.45rem;
                 font-weight: bold; 
@@ -181,6 +193,7 @@ body {
             .pImg {
                 height: 5rem;
                 width: 5rem;
+                border: 1px solid black;
             }
             li {
                 font-size: .8rem;
@@ -191,7 +204,7 @@ body {
                 text-decoration: none;
                 background-color: black;
                 color:white;
-                border: none;
+                border: 1px solid white;
                 border-radius: 10px;
             }
         }
@@ -200,7 +213,7 @@ body {
             width: 30%;
             padding: 2%;
             margin: 1% 1%;
-            border: 2px solid black;
+            border: 2px solid white;
             align-content: center;
             text-align: center;
             line-height: 155%;
@@ -213,6 +226,7 @@ body {
             .pImg {
                 height: 5rem;
                 width: 5rem;
+                border: 1px solid white;
             }
             li {
                 font-size: .8rem;
@@ -222,7 +236,7 @@ body {
                 width:66%;
                 text-decoration: none;
                 background-color: whitesmoke;
-                border: none;
+                border: 1px solid black;
                 border-radius: 10px;
             }
         }
@@ -286,17 +300,34 @@ body {
         span {
             margin-left: 33%;
             justify-content: center;
+            background-color: rgba(0, 0, 0, 0.7);
 
             i{
                 cursor: pointer;
+            }
+
+            a{
+                display: inline;
+                width: 33%;
+                padding: 0 33%;
+                text-decoration: none;
+                cursor: pointer;
+                border: 2px solid blue;
+            }
+
+            a:link{
+                color: white;
+            }
+            a:active{
+                color: white;
             }
         }
     }
 
     footer {
-        z-index: -1;
-        position:absolute;
-        background-color: rgba(0, 0, 0, 0.500);
+        z-index: 2;
+        position:fixed;
+        background-color: rgb(0, 0, 0);
         padding: 2% 0;
         display: inline-flex;
         width: 100%;
