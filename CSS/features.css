@@ -189,8 +189,8 @@ body p {
   justify-content: center;
 }
 footer {
-  z-index: -1;
-  position: absolute;
+  z-index: 2;
+  position: fixed;
   background-color: rgba(0, 0, 0, 0.5);
   padding: 2% 0;
   display: inline-flex;
