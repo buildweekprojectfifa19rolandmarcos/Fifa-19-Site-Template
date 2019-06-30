@@ -204,9 +204,9 @@ html {
   cursor: pointer;
 }
 footer {
-  z-index: -1;
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  position: fixed;
+  background-color: #000000;
   padding: 2% 0;
   display: inline-flex;
   width: 100%;
