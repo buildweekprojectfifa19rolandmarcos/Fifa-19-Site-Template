@@ -169,8 +169,7 @@ html {
 .container .form-div {
   display: flex;
   background-color: rgba(0, 0, 0, 0.5);
-  padding-left: 35px;
-  padding-right: 35px;
+  padding-left: 150px;
   padding-top: 35px;
   padding-bottom: 50px;
   width: 450px;
@@ -206,7 +205,7 @@ html {
 footer {
   z-index: 2;
   position: fixed;
-  background-color: #000000;
+  background-color: rgba(0, 0, 0, 0.5);
   padding: 2% 0;
   display: inline-flex;
   width: 100%;
