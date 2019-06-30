@@ -248,6 +248,9 @@ body .rootNav nav a:hover {
   }
 }
 @media (max-width: 800px) {
+  body .rootNav {
+    display: none;
+  }
   body .rootNav nav {
     flex-direction: column;
     flex-wrap: nowrap;
