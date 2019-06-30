@@ -176,6 +176,7 @@ html ::-webkit-scrollbar-track {
 }
 html ::-webkit-scrollbar-thumb {
   background: white;
+  border-radius: 20px;
 }
 body {
   background: url("/Design Folder/backgroundField.png") no-repeat center center fixed;
@@ -187,15 +188,6 @@ body .fab {
   height: 10rem;
   width: 10rem;
 }
-body ::-webkit-scrollbar {
-  width: 10px;
-}
-body ::-webkit-scrollbar-track {
-  background: black;
-}
-body ::-webkit-scrollbar-thumb {
-  background: white;
-}
 body button {
   cursor: pointer;
 }
@@ -206,6 +198,25 @@ body .header {
   z-index: 2;
   background-color: #000000;
   position: fixed;
+}
+body .header h1 {
+  display: inline-flex;
+  color: white;
+  font-size: 2.5rem;
+  padding: 1%;
+  margin-left: 33%;
+}
+@media (max-width: 800px) {
+  body .header h1 {
+    font-size: 2rem;
+    padding: 1%;
+  }
+}
+@media (max-width: 500px) {
+  body .header h1 {
+    font-size: 1.5rem;
+    padding: 1%;
+  }
 }
 body .rootNav nav {
   padding: 2% 0;
@@ -254,14 +265,24 @@ body .Cta {
   align-content: center;
   padding: 2%;
 }
+@media (max-width: 800px) {
+  body .Cta {
+    margin-top: 10%;
+  }
+}
 body .Cta h1 {
   margin-left: 2%;
-  font-size: 5rem;
+  font-size: 3.5rem;
   font-weight: bolder;
+}
+@media (max-width: 800px) {
+  body .Cta h1 {
+    font-size: 2.5rem;
+  }
 }
 @media (max-width: 500px) {
   body .Cta h1 {
-    font-size: 2rem;
+    font-size: 1rem;
   }
 }
 body .Cta .landingImg {
@@ -279,8 +300,7 @@ body .products .productContainer {
   align-content: center;
   text-align: center;
   line-height: 155%;
-  background-color: white;
-  opacity: 0.6;
+  background-color: hsla(0, 0%, 100%, 0.9);
 }
 body .products .productContainer h1 {
   font-size: 1.45rem;
@@ -289,6 +309,7 @@ body .products .productContainer h1 {
 body .products .productContainer .pImg {
   height: 5rem;
   width: 5rem;
+  border: 1px solid black;
 }
 body .products .productContainer li {
   font-size: 0.8rem;
@@ -299,14 +320,14 @@ body .products .productContainer button {
   text-decoration: none;
   background-color: black;
   color: white;
-  border: none;
+  border: 1px solid white;
   border-radius: 10px;
 }
 body .products .productContainerInv {
   width: 30%;
   padding: 2%;
   margin: 1% 1%;
-  border: 2px solid black;
+  border: 2px solid white;
   align-content: center;
   text-align: center;
   line-height: 155%;
@@ -320,6 +341,7 @@ body .products .productContainerInv h1 {
 body .products .productContainerInv .pImg {
   height: 5rem;
   width: 5rem;
+  border: 1px solid white;
 }
 body .products .productContainerInv li {
   font-size: 0.8rem;
@@ -329,7 +351,7 @@ body .products .productContainerInv button {
   width: 66%;
   text-decoration: none;
   background-color: whitesmoke;
-  border: none;
+  border: 1px solid black;
   border-radius: 10px;
 }
 @media (max-width: 800px) {
@@ -388,14 +410,29 @@ body .socialMedia {
 body .socialMedia span {
   margin-left: 33%;
   justify-content: center;
+  background-color: rgba(0, 0, 0, 0.7);
 }
 body .socialMedia span i {
   cursor: pointer;
 }
+body .socialMedia span a {
+  display: inline;
+  width: 33%;
+  padding: 0 33%;
+  text-decoration: none;
+  cursor: pointer;
+  border: 2px solid blue;
+}
+body .socialMedia span a:link {
+  color: white;
+}
+body .socialMedia span a:active {
+  color: white;
+}
 body footer {
-  z-index: -1;
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  position: fixed;
+  background-color: #000000;
   padding: 2% 0;
   display: inline-flex;
   width: 100%;
