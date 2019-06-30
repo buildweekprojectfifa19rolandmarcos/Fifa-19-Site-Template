@@ -1,0 +1,173 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html {
+    ::-webkit-scrollbar{
+        width: 10px;
+    }
+    ::-webkit-scrollbar-track{
+        background: black;
+    }
+    ::-webkit-scrollbar-thumb{
+        background: white;
+    }
+}
+
+body {
+    font-size: 62.5%;
+
+}
+
+
+html{
+  background:#000000ce;
+  background: url(https://source.unsplash.com/3440x1440/?soccer,teams) no-repeat center center fixed;
+}
+.rootNav {
+    nav {
+        background-color: rgba(0, 0, 0, 0.500);
+        width: 100%;
+        padding: 2% 0;
+        list-style: none;
+        display: flex;
+        flex-wrap: nowrap;
+        a {     
+            border-right: 1px solid white;
+            margin: 0 auto;
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            padding: 0 4%;
+
+            &:hover {
+                background-color: white;
+                color: black;
+                transition-duration: 1.5s;
+                background: linear-gradient(to left, white 50%, rgba(0, 0, 0, 0) 50%);
+                background-size: 200% 100%;
+                background-position:right bottom;
+            }
+        }
+    }
+}
+
+.container {
+	width:100%;
+    padding-top:30px;
+    .form-div {
+        display: flex;
+        background-color: rgba(0, 0, 0, 0.500);;
+        padding-left:35px;
+        padding-right:35px;
+        padding-top:35px;
+        padding-bottom:50px;
+        width: 450px;
+        margin: 0 auto;
+        .feedback-input {
+            opacity:0.9;
+            color:#000000;
+            font-weight:400;
+            font-size: 18px;
+            border-radius: 0;
+            line-height: 22px;
+            background-color: #fbfbfb;
+            border: 3px solid #fbfbfb;
+            padding: 13px 13px 13px 54px;
+            margin-bottom: 10px;
+            width:100%;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -ms-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+    }
+    
+}
+
+.socialMedia {
+    display: flex;
+    width: 100%;
+    span {
+        margin: 0 auto;
+        i{
+            cursor: pointer;
+        }
+    }
+}
+
+
+footer {
+    z-index: 2;
+    position:fixed;
+    background-color: rgb(0, 0, 0);
+    padding: 2% 0;
+    display: inline-flex;
+    width: 100%;
+    bottom: 0;
+    a {
+        font-size: 1.0rem;
+        display: inline-flex;
+        text-decoration: none;
+        padding: 0 1%;
+        margin: 0 auto;
+        border-right: 1px solid white;
+        color: white;
+        &:hover{
+            background-color: rgba(0, 0, 0, 0);
+            color: black;
+            transition-duration: 1.5s;
+            background: linear-gradient(to left, white 50%, rgba(0, 0, 0, 0) 50%);
+            background-size: 200% 100%;
+            background-position:right bottom;
+        }
+    }
+}
+
+
+
+
+
+
+
