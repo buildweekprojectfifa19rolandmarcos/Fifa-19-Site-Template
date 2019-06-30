@@ -410,12 +410,18 @@ body .socialMedia {
 body .socialMedia span {
   margin-left: 33%;
   justify-content: center;
+  background-color: rgba(0, 0, 0, 0.7);
 }
 body .socialMedia span i {
   cursor: pointer;
 }
 body .socialMedia span a {
+  display: inline;
+  width: 33%;
+  padding: 0 33%;
   text-decoration: none;
+  cursor: pointer;
+  border: 2px solid blue;
 }
 body .socialMedia span a:link {
   color: white;
