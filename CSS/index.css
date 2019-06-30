@@ -265,14 +265,24 @@ body .Cta {
   align-content: center;
   padding: 2%;
 }
+@media (max-width: 800px) {
+  body .Cta {
+    margin-top: 10%;
+  }
+}
 body .Cta h1 {
   margin-left: 2%;
-  font-size: 5rem;
+  font-size: 3.5rem;
   font-weight: bolder;
+}
+@media (max-width: 800px) {
+  body .Cta h1 {
+    font-size: 2.5rem;
+  }
 }
 @media (max-width: 500px) {
   body .Cta h1 {
-    font-size: 2rem;
+    font-size: 1rem;
   }
 }
 body .Cta .landingImg {
@@ -404,12 +414,23 @@ body .socialMedia span {
 body .socialMedia span i {
   cursor: pointer;
 }
+body .socialMedia span a {
+  text-decoration: none;
+}
+body .socialMedia span a:link {
+  color: white;
+}
+body .socialMedia span a:active {
+  color: white;
+}
 body footer {
-  z-index: -1;
-  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  position: fixed;
+  background-color: #000000;
   padding: 2% 0;
   display: inline-flex;
   width: 100%;
+  bottom: 0;
 }
 body footer a {
   font-size: 1rem;
