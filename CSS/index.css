@@ -179,7 +179,10 @@ html ::-webkit-scrollbar-thumb {
   border-radius: 20px;
 }
 body {
-  background: url("/Design Folder/backgroundField.png") no-repeat center center fixed;
+  background-image: url("../Design Folder/backgroundField.png");
+  background-repeat: no-repeat;
+  background-position: center fixed;
+
   background-color: black;
   min-height: 100%;
   font-size: 62.5%;
@@ -223,6 +226,7 @@ body .rootNav nav {
   list-style: none;
   display: flex;
   flex-wrap: nowrap;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 body .rootNav nav a {
   border-right: 1px solid white;
@@ -246,8 +250,14 @@ body .rootNav nav a:hover {
     background-size: cover;
     background-position: center;
   }
+  body .header {
+    display: none;
+  }
 }
 @media (max-width: 800px) {
+  body .rootNav {
+    display: none;
+  }
   body .rootNav nav {
     flex-direction: column;
     flex-wrap: nowrap;
@@ -416,12 +426,10 @@ body .socialMedia span i {
   cursor: pointer;
 }
 body .socialMedia span a {
-  display: inline;
-  width: 33%;
+  display: flex;
   padding: 0 33%;
   text-decoration: none;
   cursor: pointer;
-  border: 2px solid blue;
 }
 body .socialMedia span a:link {
   color: white;
