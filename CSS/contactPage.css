@@ -127,7 +127,8 @@ body {
 }
 html {
   background: #000000ce;
-  background: url(https://source.unsplash.com/3440x1440/?soccer,teams) no-repeat center center fixed;
+  background: url(/Design\ Folder/contactPage.jpeg) no-repeat center center fixed;
+  background-size: cover;
 }
 .rootNav nav {
   background-color: rgba(0, 0, 0, 0.5);
