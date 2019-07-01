@@ -21,22 +21,15 @@
                     <a href='contactPage.html'>Contact</a>
                 </nav>
         </div>
-        <div class="container">
-                <div id="form" class="form-div">
-                  <form class="form">
-                    <p class="name">
-                      <input name="name" type="text" class="feedback-input" placeholder="Name" id="name" />
-                    </p>
-                    <p class="email">
-                      <input name="email" type="text" class="feedback-input" id="email" placeholder="Email" />
-                    </p>
-                    <p class="text">
-                      <textarea name="text" class="feedback-input" id="comment" placeholder="Comment"></textarea>
-                    </p>
-                    <div class="submit">
-                      <input type="submit" onclick="SEND()" id="submit" value="SEND"/>
-                    </div>
-                  </form>
+        <div class="form">
+          <form id="form1">
+            <label for="firstname">First Name: <input type="text" class='feedback' id="firstname" /></label>
+            <label for="lastname">Last Name: <input type="text" class='feedback' id="lastname" /></label>
+            <label for="eMail">E-mail: <input type="text" class='feedback' id="eMail" /></label>
+            <label for="message">Message: <input type="text" class='feedback' id="message" /></label>
+            <input type="submit" value="Submit">
+            </form>
+            <p id="yourname">Please provide your first, last, message, and e-mail above.</p>
             </div>
         </div>
             <div class="socialMedia">

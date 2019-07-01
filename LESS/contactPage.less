@@ -82,18 +82,21 @@ html{
     }
 }
 
-.container {
+.form {
 	width:100%;
     padding-top:30px;
-    .form-div {
+    margin-bottom: 5%;
+    #form1 {
         display: flex;
         background-color: rgba(0, 0, 0, 0.500);;
-        padding-left:150px;
+        padding-left:50px;
+        padding-right:50px;
         padding-top:35px;
         padding-bottom:50px;
         width: 450px;
         margin: 0 auto;
-        .feedback-input {
+        flex-direction: column;
+        label {
             opacity:0.9;
             color:#000000;
             font-weight:400;
@@ -102,15 +105,19 @@ html{
             line-height: 22px;
             background-color: #fbfbfb;
             border: 3px solid #fbfbfb;
-            padding: 13px 13px 13px 54px;
-            margin-bottom: 10px;
-            width:100%;
+            padding: 6px 6px 6px 6px;
             -webkit-box-sizing: border-box;
             -moz-box-sizing: border-box;
             -ms-box-sizing: border-box;
             box-sizing: border-box;
         }
     }
+}
+
+#yourname {
+    color: white;
+    font-size: 1.3rem;
+    text-align: center;
 }
 
 .socialMedia {
