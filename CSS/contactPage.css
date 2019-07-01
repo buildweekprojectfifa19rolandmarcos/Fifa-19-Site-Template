@@ -122,15 +122,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-html ::-webkit-scrollbar {
-  width: 10px;
-}
-html ::-webkit-scrollbar-track {
-  background: black;
-}
-html ::-webkit-scrollbar-thumb {
-  background: white;
-}
 body {
   font-size: 62.5%;
 }
@@ -197,10 +188,8 @@ html {
   width: 100%;
 }
 .socialMedia span {
-  margin: 0 auto;
-}
-.socialMedia span i {
-  cursor: pointer;
+  margin-left: 33%;
+  justify-content: center;
 }
 footer {
   z-index: 2;
